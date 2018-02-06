@@ -25,6 +25,8 @@ Once both are installed, you'll be able to do the following steps from your CLI:
 
 'vagrant up /windows/'
 
+'vagrant up /windows/'
+
 'vagrant hosts list'
 
 **ssh into each box individually**
