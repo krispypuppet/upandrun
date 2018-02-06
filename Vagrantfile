@@ -38,6 +38,5 @@ Vagrant.configure("2") do |config|
     linux.vm.provider "virtualbox" do |v|
       v.memory = 2048     
     end
-  end
-  
+  end  
 end
