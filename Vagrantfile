@@ -39,4 +39,5 @@ Vagrant.configure("2") do |config|
       v.memory = 2048     
     end
   end
+  
 end
