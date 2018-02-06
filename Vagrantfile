@@ -29,6 +29,15 @@ Vagrant.configure("2") do |config|
     linux.vm.provision "shell", path: "scripts/linux_agent.sh"
     linux.vm.provider "virtualbox" do |v|
       v.memory = 2048
+      
+  config.vm.define "ubuntu.vm" do |linux|
+    linux.vm.box = "ubuntu/xenial64"
+    linux.vm.hostname = "ubuntu.vm"
+    linux.vm.network "private_network", ip: "192.168.50.6"
+    linux.vm.provision "shell", path: "scripts/linux_agent.sh"
+    linux.vm.provider "virtualbox" do |v|
+      v.memory = 2048     
+  
     end
   end
 end
