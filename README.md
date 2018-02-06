@@ -31,7 +31,7 @@ Once both are installed, you'll be able to do the following steps from your CLI:
 
 'vagrant ssh /master/'
 'vagrant ssh /linux/'
-'vagrant ssh /windows/'
+'vagrant ssh /ubuntu/'
 
 ```
 
