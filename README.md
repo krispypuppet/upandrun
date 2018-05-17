@@ -4,7 +4,7 @@ A very simple vagrant environment for getting up and running with Puppet Enterpr
 
 This repo provides you with a complete, yet simple environment that consists of a master (CentOS7), as well as a Linux (CentOS7) and Windows VM.
 
-Shout out to Grace Andrews for putting this together! I have updated this fork to use Puppet Enterprise 2017.3.4.
+Shout out to Grace Andrews for putting this together! I have updated this fork to use Puppet Enterprise 2017.3.5.
 
 ## Pre-Steps ##
 
