@@ -134,6 +134,8 @@ function StartPuppetService {
 function MakeMasterHostsEntry {
   $host_entry = "192.168.50.4 $server"
   $host_entry | Out-File -FilePath C:\Windows\System32\Drivers\etc\hosts -Append -Encoding ascii
+  Invoke-Command  -ComputerName windows -ScriptBlock {Set-ItemProperty -Path "HKLM:\System\CurrentControlSet\Control\Terminal Server" -Name "fDenyTSConnections" -Value 0 -Verbose}
+  Invoke-Command  -ComputerName windows -ScriptBlock {Enable-NetFirewallRule -DisplayGroup "Remote Desktop" -Verbose}
 }
 
 MakeMasterHostsEntry
